@@ -37,7 +37,7 @@ import '@fortawesome/fontawesome-free/css/all.css'
   };
 </script>
 
-<style scoped>
+<style>
   .navbar {
     display: flex;
     justify-content: space-between;

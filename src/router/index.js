@@ -7,6 +7,7 @@ import About from '@/views/about.vue';
 import Login from '@/views/login.vue';
 import Register from '@/views/register.vue';
 import Upload from '@/views/dataUpload.vue'
+import Temp from '@/views/temp.vue'
 Vue.use(Router);
 
 export default new Router({
@@ -46,6 +47,11 @@ export default new Router({
       path: '/Upload',
       name: 'Upload',
       component: Upload
+    },
+    {
+      path: '/Temp',
+      name: 'Temp',
+      component: Temp
     }
 
 
