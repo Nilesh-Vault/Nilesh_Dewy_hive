@@ -3,13 +3,8 @@
     <div class="navbar-brand">
       <router-link :to="{ name: 'home' }">Skincare Store</router-link>
     </div>
-    <button class="navbar-toggle" @click="toggleNav">
-      <i class="fas fa-bars"></i>
-    </button>
+
     <ul class="navbar-menu" :class="{ 'active': isNavOpen }">
-      <li class="navbar-item">
-        <router-link :to="{ name: 'Home' }"><i class="fas fa-home"></i> Home</router-link>
-      </li>
       <li class="navbar-item">
         <router-link :to="{ name: 'About' }"><i class="fas fa-info-circle"></i> About</router-link>
       </li>
@@ -67,7 +62,7 @@ import '@fortawesome/fontawesome-free/css/all.css'
     padding: 0;
     position: absolute;
     top: 100%;
-    left: 0;
+    left: 50%;
     width: 100%;
     background-color: #f089b2;
     transition: all 0.3s ease-in-out;
@@ -126,5 +121,9 @@ import '@fortawesome/fontawesome-free/css/all.css'
     .navbar-toggle {
       display: none;
     }
+    a {
+  color: #fff; /* or any other color you want */
+  text-decoration: none; /* removes the underline */
+}
   }
 </style>

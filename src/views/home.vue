@@ -82,6 +82,7 @@
   padding: 2rem;
   width: 100%;
   max-width: 100%;
+  /* background: black; */
 }
 
 .home__heading {
