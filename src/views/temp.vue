@@ -1,5 +1,7 @@
 <template>
-    <div><Navbar></Navbar>
+    <div>
+      <Navbar></Navbar>
+      
     
     <div class="product-list">
 
@@ -18,7 +20,7 @@
   <script>
 import Navbar from '@/components/nav.vue'
   import db from '../firebase'
-  
+  console.log(Navbar)
   export default {
     name : 'Temp',
     data() {
@@ -46,13 +48,18 @@ import Navbar from '@/components/nav.vue'
 .product-list {
   display: flex;
   flex-wrap: wrap;
+  justify-content: space-between;
+  gap: 20px;
 }
 
 .product-list div {
-  width: 25%;
+  flex-basis: calc(33.33% - 20px);
+  background-color: #f7f7f7;
   padding: 20px;
-  box-sizing: border-box;
+  box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.1);
+  border-radius: 5px;
 }
+
 
 .product-list h2 {
   font-size: 24px;
